@@ -19,6 +19,6 @@ public class Main {
 		else if(a < b)
 			System.out.print("<");
 		else
-			System.out.print("=");
+			System.out.print("==");
 	}
 }
