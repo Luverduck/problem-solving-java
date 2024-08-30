@@ -1,4 +1,4 @@
-package Baekjoon.src.step01_by_level.lv04_array_1d.p05_10813;
+package Baekjoon.src.step01_by_level.lv04_array_1d.p05_10810;
 
 import java.io.*;
 import java.util.*;
@@ -15,21 +15,17 @@ public class Main {
         int M = Integer.parseInt(st.nextToken());
 
         int[] basket = new int[N + 1];
-        for(int i = 1; i <= N; ++i)
-            basket[i] = i;
 
         while(true) {
-            String input = br.readLine();
-            if(input == null) break;
-
-            st = new StringTokenizer(input);
-
+            String temp = br.readLine();
+            if(temp == null) break;
+            st = new StringTokenizer(temp);
             int i = Integer.parseInt(st.nextToken());
             int j = Integer.parseInt(st.nextToken());
+            int k = Integer.parseInt(st.nextToken());
 
-            int temp = basket[i];
-            basket[i] = basket[j];
-            basket[j] = temp;
+            for(int pos = i; pos <= j; ++pos)
+                basket[pos] = k;
         }
 
         for(int i = 1; i <= N; ++i)
