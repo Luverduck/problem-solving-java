@@ -20,10 +20,6 @@ public class Main {
             bw.append(String.valueOf(res));
         }
 
-        // in = (in - K) * N
-        // in * (N - 1) = K * N
-        // in = K * N / (N - 1)
-
         bw.flush();
         br.close();
         bw.close();
